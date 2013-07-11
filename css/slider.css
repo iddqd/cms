@@ -1,0 +1,42 @@
+#slider{
+    position:relative;
+    width: 622px;
+    height: 516px;
+}
+#slider img{
+    width: 622px;
+    height: 516px;
+    display: none;
+}
+#slider img:first-child{
+    display: inline;
+}
+#left_arrow{
+    background: url(/img/left_arrow.png) no-repeat left center;
+    position:absolute;
+    left:0px;
+    top:0px;
+    height: 100%;
+    width: 300px
+}
+#right_arrow{
+    background: url(/img/right_arrow.png) no-repeat  right center;
+    position:absolute;
+    right:0px;
+    top:0px;
+    height: 100%;
+    width: 300px
+}
+.arrows{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); /* IE 5.5+*/
+    -moz-opacity: 0.6; /* Mozilla 1.6 и ниже */
+    -khtml-opacity: 0.6; /* Konqueror 3.1, Safari 1.1 */
+    opacity: 0.6; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+}
+.arrows:hover{
+    cursor:pointer;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100); /* IE 5.5+*/
+    -moz-opacity: 1; /* Mozilla 1.6 и ниже */
+    -khtml-opacity: 1; /* Konqueror 3.1, Safari 1.1 */
+    opacity: 1; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+}

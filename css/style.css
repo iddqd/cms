@@ -1,0 +1,64 @@
+#groupDiv{
+	position:relative
+}
+#groupDiv .pagination {
+    font-family: Verdana, Geneva, sans-serif;
+	position:absolute;
+	left:60px;
+	bottom:20px;
+	height:17px;
+}
+
+#groupDiv .pagination  a:link,
+#groupDiv .pagination  a:visited,
+#groupDiv .pagination  a:hover,
+#groupDiv .pagination  a:active {
+    text-decoration:none;
+    background-color: #2c2826;
+    padding:2px 0;
+    font-size:13px;
+	line-height:13px;
+	width:17px;
+	height:13px;
+	display:block;
+	float:left;
+    font-weight:bold;
+	color:#a8a89e;
+	text-align:center;
+	margin-right:3px;
+	text-transform:none
+}
+
+#groupDiv .pagination  a:hover,  #groupDiv .pagination  a.active{
+	    color: #1d1c1a;
+    background-color: #a8a89e;  
+
+}
+#groupDiv .left ul{
+width:290px
+}
+/*
+.pagination  span {
+    text-decoration:none;
+    background:#fff;
+    padding:3px 6px;
+    border:1px solid #333;
+    color:#a6a6a6;
+    font-size:11px;
+}
+*/
+#groupDiv .left a.groupMenuTitle{
+line-height:18px;
+display:block;
+margin-top:15px
+}
+#groupDiv .left a.groupMenuTitle span{
+font-size:12px;
+text-transform:none
+}
+.readmore{
+color:#897967
+}
+.readmore:hover{
+text-decoration:none !important
+}

@@ -1,0 +1,86 @@
+<div style="padding-top: 20px;padding-right: 20px; float:right;">
+    <a href="/kvartiri">Все этажи</a> |
+    <a href="/kvartiri/lvl2">2 этаж</a> |
+    <a href="/kvartiri/lvl3">3 этаж</a> |
+    <a href="/kvartiri/lvl4">4 этаж</a> |
+    <a href="/kvartiri/lvl5">5 этаж</a> |
+    <a href="/kvartiri/lvl6">6 этаж</a> |
+    <a href="/kvartiri/lvl7">7 этаж</a> |
+    <a href="/kvartiri/lvl8">8 этаж</a> |
+    <a href="/kvartiri/lvl9">9 этаж</a> |
+    <a href="/kvartiri/lvl10">10 этаж</a> |
+    <a href="/kvartiri/lvl11">11 этаж</a>
+</div>
+
+<div style="padding-top: 20px; padding-left: 20px" >
+    <a href="/kvartiri/kv1">1-комнатные</a> |
+    <a href="/kvartiri/kv2">2х-комнатные</a> |
+    <a href="/kvartiri/kv3">3х-комнатные</a>
+</div>
+
+
+
+<table style="width:100%;padding:20px;text-align:center">
+    <thead>
+        <tr>
+            <th>Планировка</th>
+            <th>Номер<br> квартиры</th>
+            <th>Этаж</th>
+            <th>Номер<br> на площадке</th>
+            <th>Комнат</th>
+            <th>Площадь<br> с балконом</th>
+            <th>Площадь<br> без балкона</th>
+            <th>Цена<br> за м&sup2, руб</th>
+            <th>Стоимость, руб.</th>
+            <th style="width: 10%">Статус</th>
+        </tr>
+    </thead>
+    <tfoot>
+      <tr>
+            <th>Планировка</th>
+            <th>Номер<br> квартиры</th>
+            <th>Этаж</th>
+            <th>Номер<br> на площадке</th>
+            <th>Комнат</th>
+            <th>Площадь<br> с балконом</th>
+            <th>Площадь<br> без балкона</th>
+            <th>Цена<br> за м&sup2, руб</th>
+            <th>Стоимость, руб.</th>
+            <th style="width: 10%">Статус</th>
+        </tr>
+    </tfoot>
+    <tbody style="vertical-align:middle">
+        {for:}
+        <tr>
+            <td><a href="/kvartiri/{id}"><img src="/img/planlogo.png" style="padding:10px;"></a></td>
+            <td>{id}</td>
+            <td>{lvl}</td>
+            <td>{number}</td>
+            <td>{rooms}</td>
+            <td>{square-b} м&sup2</td>
+            <td>{square-nb} м&sup2</td>
+            <td>{price-fm}</td>
+            <td>{price}</td>
+            <td>{status}</td>
+        </tr>
+        {:endfor}
+    </tbody>
+</table>
+<div style="padding-bottom: 0px;padding-right: 20px; float:right;">
+    <a href="/kvartiri">Все этажи</a> |
+    <a href="/kvartiri/lvl2">2 этаж</a> |
+    <a href="/kvartiri/lvl3">3 этаж</a> |
+    <a href="/kvartiri/lvl4">4 этаж</a> |
+    <a href="/kvartiri/lvl5">5 этаж</a> |
+    <a href="/kvartiri/lvl6">6 этаж</a> |
+    <a href="/kvartiri/lvl7">7 этаж</a> |
+    <a href="/kvartiri/lvl8">8 этаж</a> |
+    <a href="/kvartiri/lvl9">9 этаж</a> |
+    <a href="/kvartiri/lvl10">10 этаж</a> |
+    <a href="/kvartiri/lvl11">11 этаж</a>
+</div>
+<div style="padding-bottom: 20px; padding-left: 20px" >
+    <a href="/kvartiri/kv1">1-комнатные</a> |
+    <a href="/kvartiri/kv2">2х-комнатные</a> |
+    <a href="/kvartiri/kv3">3х-комнатные</a>
+</div>

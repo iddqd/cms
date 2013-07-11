@@ -1,0 +1,65 @@
+<style>
+    #content{padding-top: 0px}
+    #content .img{
+        float:left;
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-bottom: -5px;
+    }
+    #content img{
+        -moz-box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Для Firefox */
+        -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+        box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+    }
+    #content table{margin: 0px 0px;color:#fff;font-size:1.3em}
+    #content th,td{border-bottom: 1px #fff solid;padding-top: 5px}
+    #content th{text-align:left;padding-left: 0px}
+</style>
+<div class="img"><img border="0" src="/img/apartment/{id}.jpg" width="622px"><br>
+</div>
+<table>
+    <tbody>
+        <tr>
+            <td>Номер cекции:</td>
+            <th>{section}</th>
+        </tr>
+        <tr>
+            <td>Номер квартиры:</td>
+            <th>{id}</th>
+        </tr>
+        <tr>
+            <td>Этаж:</td>
+            <th>{lvl}</th>
+        </tr>
+        <tr>
+            <td>Номер на площадке:</td>
+            <th>{number}</th>
+        </tr>
+        <tr>
+            <td>Комнат:</td>
+            <th>{rooms}</th>
+        </tr>
+        <tr>
+            <td>Площадь с балконом:</td>
+            <th>{square-b}</th>
+        </tr>
+        <tr>
+            <td>Площадь без балкона:</td>
+            <th>{square-nb}</th>
+        </tr>
+        <tr>
+            <td>Цена, руб.\м2:</td>
+            <th>{price-fm} руб.</th>
+        </tr>
+        <tr>
+            <td>Стоимость, руб.:</td>
+            <th>{price} руб.</th>
+        </tr>
+        <tr>
+            <td>Статус:</td>
+            <th>{status}</th>
+        </tr>
+    </tbody>
+</table><br>
+    {pdf}
+<div style="clear:both"></div>

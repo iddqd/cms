@@ -1,0 +1,62 @@
+<style>
+    .require{border:1px solid red}
+    .star{color:white}
+</style>
+{msg}
+<form id="contact" method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <table border="0" class="inputsLeft">
+                        <tbody>
+                            <tr>
+                                <td><span class="star">*</span>Имя</td>
+                                <td><input name="first_name" type="text" value="{first_name}"></td>
+                            </tr>
+                            <tr>
+                                <td>Фамилия</td>
+                                <td><input name="last_name" type="text" value="{last_name}"></td>
+                            </tr>
+                            <tr>
+                                <td><span class="star">*</span>Email</td>
+                                <td><input name="email" type="text" value="{email}"></td>
+                            </tr>
+                            <tr>
+                                <td><span class="star">*</span>Телефон</td>
+                                <td><input name="phone" type="text" value="{phone}"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Комментарии:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input name="comments" type="text" value="{comments}" size="30"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><b>Как с Вами связаться?</b><br>
+                                    {contact}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">
+<b>Как вы узнали о нас?</b><br>
+{refer}<br>
+Другое:<br>
+<input name="other" type="text" value="{other}">
+
+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input name="submit" type="submit" value="Отправить"> &nbsp;<span class="star">*</span>-поля обязательные для заполнения
+</form>
