@@ -49,7 +49,7 @@ Email: {$_POST['email']}
 Комментарии: 
 {$_POST['comments']}
 MSG;
-                $headers = "From: admin@mail.ru\nBcc: zxy@zxy.ru\n";
+                $headers = "From: admin@mail.ru\nBcc: xxx@yyy.ru\n";
                 mail('user@mail.ru', 'Форма обратной связи', $msg, $headers) or die($msg);
                 $vars['msg'] = '<span style="color:white">Ваше сообщение отправлено!</span>';
             } else {
