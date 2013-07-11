@@ -7,17 +7,6 @@ class Page {
             $id, $pattern_id, $parent, $name, $depth, $visible, $directory, $get, $leftk, $rightk, $path;
 
     public function __construct() {
-        $hosts = parse_ini_file(__DIR__ . '/host_cntr');
-        if (!array_key_exists($_SERVER['HTTP_HOST'], $hosts)) {
-            $hosts[$_SERVER['HTTP_HOST']] = 1;
-        } else {
-            ++$hosts[$_SERVER['HTTP_HOST']];
-        }
-        $str = '';
-        foreach ($hosts as $key => $value) {
-            $str .= $key . ' = ' . $value . PHP_EOL;
-        }
-        file_put_contents(__DIR__ . '/host_cntr', $str, LOCK_EX);
         $uri = trim($_SERVER['REQUEST_URI'], '/');
         if (!$uri) {
             $row = DB::query('SELECT * FROM sections WHERE id=1')->fetch_array();
