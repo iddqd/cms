@@ -1,0 +1,9 @@
+#php_value error_reporting 0
+#php_flag display_errors on
+RewriteEngine on
+
+RewriteRule ^admin/? - [L]
+RewriteRule ^files/(.+) - [L]
+RewriteRule \.html$ - [L]
+RewriteRule \.pdf$ - [L]
+RewriteRule (.*) index.php [L]
